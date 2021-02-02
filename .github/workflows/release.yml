@@ -13,7 +13,7 @@ jobs:
       - name: Build 🔧
         run: |
           RELEASE_TAG=${GITHUB_REF#refs/tags/}
-          docker build init-container -t docker.io/erousseau/aws-efs-csi-pv-provisioner:${RELEASE_TAG}
+          docker build . -t docker.io/erousseau/aws-efs-csi-pv-provisioner:${RELEASE_TAG}
       - name: Push 🚀
         env:
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
