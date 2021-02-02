@@ -1,5 +1,7 @@
 # AWS EFS CSI PV provisioner
 
+[![Build Status](https://github.com/ecrousseau/aws-efs-csi-pv-provisioner/workflows/master/badge.svg)](https://github.com/ecrousseau/aws-efs-csi-pv-provisioner/actions)
+
 Kubernetes CSI driver to dynamically provisions Persistent Volumes (PVs) in response to user-requested Persistent Volume Clains (PVCs). Each PV / PVC is a subdirectory on a single, cluster-wide EFS file system. Works in conjunction with the [AWS EFS CSI driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver).
 
 ## Installation
